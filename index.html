@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>myportfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets/images/pt3-logo.png" alt="" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services"></a>Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div class="header-text">
+                <p>Webdeveloper</p>
+                <h1>Hello, I'm <span>Wisdom</span><br> Kwawuvi from Ghana</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="./assets/images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+
+                    <h1 class="subt">About Me</h1>
+                    <p>write something here</p>
+
+                    <div class="tab-t">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>ui/ux</span> <br> DesigningWeb interface</li>
+                            <li><span> App Development</span><br> DesigningWeb interface</li>
+                            <li><span>Web Development</span> <br> DesigningWeb interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>ui/ux</span> <br> DesigningWeb interface</li>
+                            <li><span> App Development</span><br> DesigningWeb interface</li>
+                            <li><span>Web Development</span> <br> DesigningWeb interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>ui/ux</span> <br> DesigningWeb interface</li>
+                            <li><span> App Development</span><br> DesigningWeb interface</li>
+                            <li><span>Web Development</span> <br> DesigningWeb interface</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Services">
+        <div class="container">
+            <h1 class="subt">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>write something here</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>write something here</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>write something here</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subt">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Describe what it is here</p>
+                        <a href="#">icon</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/pt2-logo.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Describe what it is here</p>
+                        <a href="#">icon</a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="./assets/images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Describe what it is here</p>
+                        <a href="#">icon</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subt">Contact Me</h1>
+                    <p>wisdomkwawuvi23@gmail.com</p>
+                    <p>+233591318539</p>
+                    <div class="social-icons">
+                     <a href="#">icons here</a>   
+                     <a href="#">icons here</a>   
+                     <a href="#">icons here</a>   
+                     <a href="#">icons here</a>   
+                     <a href="#">icons here</a>   
+                    </div>
+                    <a href="./assets/images/WISDOM KWAWUVI - CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder=" Your Name" required>
+                        <input type="email" name="email" placeholder="Your email"required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ WISE. 2024</p>
+        </div>
+    </div>
+    <script>
+        const tablinks = document.getElementsByClassName('tab-links');
+        const tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link');
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        };
+    </script>
+</body>
+
+</html>
