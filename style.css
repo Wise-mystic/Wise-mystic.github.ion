@@ -366,6 +366,17 @@ form textarea {
     margin-top: 10px;
 
 }
+form input[name="Name"],
+form input[name="Email"],
+form input[name="Subject"] {
+    margin-bottom: 15px;
+}
+
+form textarea[name="Message"] {
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 15px;
+}
 
 
 form .btn2 {
